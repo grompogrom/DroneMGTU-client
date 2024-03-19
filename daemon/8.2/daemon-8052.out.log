@@ -1,0 +1,697 @@
+2023-12-24T12:21:16.483+0300 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens=java.base/java.util=ALL-UNNAMED, --add-opens=java.base/java.lang=ALL-UNNAMED, --add-opens=java.base/java.lang.invoke=ALL-UNNAMED, --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens=java.base/java.nio.charset=ALL-UNNAMED, --add-opens=java.base/java.net=ALL-UNNAMED, --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2023-12-24T12:21:16.589+0300 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=55d00768-d4e4-4a07-8684-eac6c8a81663,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=8052,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-12-24T12:21:16.614+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface docker0
+2023-12-24T12:21:16.614+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-12-24T12:21:16.616+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.17.0.1
+2023-12-24T12:21:16.616+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface wlp4s0
+2023-12-24T12:21:16.616+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-12-24T12:21:16.617+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ae88:3539:aac:1060%wlp4s0
+2023-12-24T12:21:16.620+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.31.214
+2023-12-24T12:21:16.620+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2023-12-24T12:21:16.621+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2023-12-24T12:21:16.622+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2023-12-24T12:21:16.629+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2023-12-24T12:21:16.632+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]].
+2023-12-24T12:21:16.646+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Sun Dec 24 12:21:16 MSK 2023, with address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:16.646+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:16.647+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=55d00768-d4e4-4a07-8684-eac6c8a81663,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=8052,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-12-24T12:21:16.648+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=55d00768-d4e4-4a07-8684-eac6c8a81663,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=8052,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-12-24T12:21:16.657+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:21:16.660+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:16.664+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:16.665+0300 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2023-12-24T12:21:16.667+0300 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2023-12-24T12:21:16.671+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2023-12-24T12:21:16.673+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2023-12-24T12:21:16.674+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-12-24T12:21:16.679+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:37006 to /127.0.0.1:46179.
+2023-12-24T12:21:16.705+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.Build
+2023-12-24T12:21:16.706+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received non-IO message from client: Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}
+2023-12-24T12:21:16.706+0300 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}.
+2023-12-24T12:21:16.707+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia} with connection: socket connection from /127.0.0.1:46179 to /127.0.0.1:37006.
+2023-12-24T12:21:16.709+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:46179 to /127.0.0.1:37006] after 0.0 minutes of idle
+2023-12-24T12:21:16.711+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:16.712+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:16.712+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:21:16.713+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:16.714+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:16.714+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-12-24T12:21:16.715+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-12-24T12:21:16.715+0300 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}. Dispatching build started information...
+2023-12-24T12:21:16.716+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@2f897d2e
+2023-12-24T12:21:16.717+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, XAUTHORITY, INVOCATION_ID, MOTD_SHOWN, DBUS_SESSION_BUS_ADDRESS, XDG_CURRENT_DESKTOP, JOURNAL_STREAM, QT_AUTO_SCREEN_SCALE_FACTOR, MAIL, LADSPA_PATH, SESSION_MANAGER, LOGNAME, PWD, PAM_KWALLET5_LOGIN, MANAGERPID, XCURSOR_THEME, KDE_SESSION_VERSION, SHELL, QT_SCREEN_SCALE_FACTORS, OLDPWD, CADENCE_AUTO_STARTED, VST_PATH, KDE_FULL_SESSION, GTK_MODULES, XDG_SESSION_PATH, DEBUGINFOD_URLS, DSSI_PATH, SYSTEMD_EXEC_PID, XDG_SESSION_DESKTOP, SHLVL, KDE_APPLICATIONS_AS_SCOPE, MEMORY_PRESSURE_WRITE, MEMORY_PRESSURE_WATCH, KDE_SESSION_UID, XDG_CONFIG_DIRS, LANG, XDG_SEAT_PATH, XDG_SESSION_TYPE, XDG_SESSION_ID, GRADLE_HOME, DISPLAY, GTK_RC_FILES, XDG_SESSION_CLASS, XCURSOR_SIZE, GTK3_MODULES, UBUNTU_MENUPROXY, DESKTOP_SESSION, USER, GTK2_RC_FILES, XDG_SEAT, XDG_RUNTIME_DIR, XDG_VTNR, HOME, LV2_PATH]
+2023-12-24T12:21:16.719+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-12-24T12:21:16.720+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@54d0f991
+2023-12-24T12:21:16.720+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-12-24T12:21:16.721+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 8052). The daemon log file: /mnt/code/AS/SeverDroneClient/daemon/8.2/daemon-8052.out.log
+2023-12-24T12:21:16.724+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2 GiB]
+2023-12-24T12:21:16.725+0300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-12-24T12:21:16.727+0300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2023-12-24T12:21:16.725+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-12-24T12:21:16.728+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=55d00768-d4e4-4a07-8684-eac6c8a81663,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=8052,idleTimeout=10800000,priority=NORMAL,applyInstrumentationAgent=true,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+
+FAILURE: Build completed with 5 failures.
+
+1: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:dataBindingMergeDependencyArtifactsDebug'.
+> Multiple build operations failed.
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+2: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:mergeDebugResources'.
+> Multiple build operations failed.
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars/libs
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0
+      ...and 1 more failure.
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars/libs
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+3: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:checkDebugAarMetadata'.
+> Multiple build operations failed.
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+      ...and 1 more failure.
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars/libs
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+4: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:mapDebugSourceSetPaths'.
+> Multiple build operations failed.
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+      ...and 1 more failure.
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars/libs
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+5: Task failed with an exception.
+-----------
+* What went wrong:
+Execution failed for task ':app:processDebugMainManifest'.
+> Multiple build operations failed.
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+      java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+    Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+    - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+      ...and 1 more failure.
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/79218bdd27023c682d2a2c65bf406a97/transformed/material-icons-core-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/cf9570a260b57eb1bf923e30ad588c68/transformed/animation-core-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/3ed1132fa9bc245d8cb586e2515c17c0/transformed/foundation-layout-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4a47bb2bfd8a5f54477d9b302d4b3042/transformed/material-ripple-1.4.1
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/b31bcb3189c64d6c629140066e111241/transformed/animation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/c099de68908661444c7859a7e778f4f7/transformed/material3-1.1.2
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/25e8e8ef5cb430cfdbbf554482595739/transformed/foundation-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/4abeb00821e5de3d81a0d939ce991198/transformed/ui-tooling-preview-release
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/7f1215ab407a0b7ba6c53d2882930c46/transformed/emoji2-views-helper-1.4.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/81c6b5dd7f10c02176ea2b9d4b770ab5/transformed/activity-compose-1.7.0
+   > java.io.IOException: Unable to delete directory '/mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed'
+       Failed to delete some children. This might happen because a process has files open or has its working directory set in the target directory.
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars/libs
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0/jars
+       - /mnt/code/AS/SeverDroneClient/caches/transforms-3/eb97250418ba091736c1fa1ab084c704/transformed/emoji2-1.4.0
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+==============================================================================
+
+BUILD FAILED in 21s
+12 actionable tasks: 7 executed, 5 up-to-date
+2023-12-24T12:21:37.751+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-12-24T12:21:37.763+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-12-24T12:21:37.764+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:46179 to /127.0.0.1:37006]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@740efed1 with state Busy
+2023-12-24T12:21:37.764+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:46179 to /127.0.0.1:37006]
+2023-12-24T12:21:37.764+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-12-24T12:21:37.765+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:37.765+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:21:37.765+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:21:37.766+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:37.767+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:37.767+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-12-24T12:21:37.767+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@73d1d876]
+2023-12-24T12:21:37.768+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@73d1d876]
+2023-12-24T12:21:37.774+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=d2665ef2-df9c-414e-b537-738e1f880ec7, currentDir=/mnt/code/AS/Euphonia}
+2023-12-24T12:21:37.787+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.Finished
+2023-12-24T12:21:37.787+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@3fed5649
+2023-12-24T12:21:37.788+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-12-24T12:21:37.788+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@3fed5649
+2023-12-24T12:21:37.788+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: stopping connection
+2023-12-24T12:21:37.788+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received null
+2023-12-24T12:21:37.790+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received end-of-input from client.
+2023-12-24T12:21:37.790+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: stopping connection
+2023-12-24T12:21:46.675+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:21:46.675+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:46.675+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:46.676+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:21:46.676+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:46.676+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:56.870+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:21:56.872+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:56.875+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:56.877+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:21:56.878+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:56.880+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:21:56.883+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:21:56.884+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:21:56.886+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:06.918+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:06.919+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:06.922+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:06.925+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:06.927+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:06.929+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:06.931+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:06.933+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:06.934+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:16.675+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:16.675+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:16.676+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:16.678+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:16.678+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:16.679+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:16.679+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:16.680+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:16.680+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:27.469+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:27.471+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:27.472+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:27.474+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:27.477+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:27.479+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:27.480+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:27.483+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:27.485+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:36.676+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:36.677+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:36.678+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:36.679+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:36.680+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:36.681+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:36.682+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:36.683+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:36.683+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:46.677+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:46.679+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:46.681+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:46.683+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:46.685+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:46.686+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:46.689+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:46.690+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:46.692+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:56.890+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:56.890+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:56.891+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:56.892+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:56.893+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:56.894+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:22:56.895+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:22:56.896+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:22:56.896+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:06.860+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:23:06.861+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:06.863+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:06.865+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:23:06.867+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:06.869+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:06.871+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-12-24T12:23:06.873+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:06.874+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:09.535+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:37256 to /127.0.0.1:46179.
+2023-12-24T12:23:09.538+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 92: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+2023-12-24T12:23:09.539+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 92: Received non-IO message from client: StopWhenIdle[id=1db6b189-71db-43be-8343-04707b9631a0]
+2023-12-24T12:23:09.539+0300 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=1db6b189-71db-43be-8343-04707b9631a0].
+2023-12-24T12:23:09.539+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=1db6b189-71db-43be-8343-04707b9631a0] with connection: socket connection from /127.0.0.1:46179 to /127.0.0.1:37256.
+2023-12-24T12:23:09.540+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Storing daemon stop event: stop command received
+2023-12-24T12:23:09.540+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon stop event with timestamp 1703409789540
+2023-12-24T12:23:09.541+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:23:09.541+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:09.542+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:09.542+0300 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build stop command received
+2023-12-24T12:23:09.542+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop command received. The daemon is running a build: false
+2023-12-24T12:23:09.543+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 91: dispatching Success[value=null]
+2023-12-24T12:23:09.543+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2023-12-24T12:23:09.543+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2023-12-24T12:23:09.543+0300 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2023-12-24T12:23:09.544+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:23:09.544+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+2023-12-24T12:23:09.543+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=1db6b189-71db-43be-8343-04707b9631a0]
+2023-12-24T12:23:09.546+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:23:09.543+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 92: received class org.gradle.launcher.daemon.protocol.Finished
+2023-12-24T12:23:09.546+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:09.547+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 92: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@346dd7c4
+2023-12-24T12:23:09.547+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-12-24T12:23:09.547+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-12-24T12:23:09.547+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@346dd7c4
+2023-12-24T12:23:09.548+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2023-12-24T12:23:09.547+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 92: received null
+2023-12-24T12:23:09.549+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 92: Received end-of-input from client.
+2023-12-24T12:23:09.548+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 91: stopping connection
+2023-12-24T12:23:09.549+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 91: stopping connection
+2023-12-24T12:23:09.550+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/mnt/code/AS/SeverDroneClient/caches/jars-9)
+2023-12-24T12:23:09.550+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/mnt/code/AS/SeverDroneClient/caches/jars-9).
+2023-12-24T12:23:09.551+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) has last been fully cleaned up 14 hours ago
+2023-12-24T12:23:09.551+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3)
+2023-12-24T12:23:09.551+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3).
+2023-12-24T12:23:09.552+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3) has last been fully cleaned up 14 hours ago
+2023-12-24T12:23:09.552+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for kotlin-dsl (/mnt/code/AS/SeverDroneClient/caches/8.2/kotlin-dsl)
+2023-12-24T12:23:09.553+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (/mnt/code/AS/SeverDroneClient/caches/8.2/kotlin-dsl/executionHistory.bin)
+2023-12-24T12:23:09.553+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on kotlin-dsl (/mnt/code/AS/SeverDroneClient/caches/8.2/kotlin-dsl).
+2023-12-24T12:23:09.553+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] kotlin-dsl (/mnt/code/AS/SeverDroneClient/caches/8.2/kotlin-dsl) has last been fully cleaned up 14 hours ago
+2023-12-24T12:23:09.557+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/mnt/code/AS/SeverDroneClient/caches/8.2/fileContent)
+2023-12-24T12:23:09.557+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/mnt/code/AS/SeverDroneClient/caches/8.2/fileContent).
+2023-12-24T12:23:09.557+0300 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Closing VFS, dropping state
+2023-12-24T12:23:09.559+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Generated Gradle JARs cache (/mnt/code/AS/SeverDroneClient/caches/8.2/generated-gradle-jars)
+2023-12-24T12:23:09.559+0300 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry] Finished listening to file system change events
+2023-12-24T12:23:09.559+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Generated Gradle JARs cache (/mnt/code/AS/SeverDroneClient/caches/8.2/generated-gradle-jars).
+2023-12-24T12:23:09.560+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2)
+2023-12-24T12:23:09.560+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (/mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.106/module-artifact.bin)
+2023-12-24T12:23:09.561+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.106/module-metadata.bin)
+2023-12-24T12:23:09.561+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2).
+2023-12-24T12:23:09.561+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) has last been fully cleaned up 14 hours ago
+2023-12-24T12:23:09.562+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/mnt/code/AS/SeverDroneClient/caches/journal-1)
+2023-12-24T12:23:09.562+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/mnt/code/AS/SeverDroneClient/caches/journal-1/file-access.bin)
+2023-12-24T12:23:09.563+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/mnt/code/AS/SeverDroneClient/caches/journal-1).
+2023-12-24T12:23:09.563+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/mnt/code/AS/SeverDroneClient/caches/8.2/fileHashes)
+2023-12-24T12:23:09.563+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/mnt/code/AS/SeverDroneClient/caches/8.2/fileHashes/fileHashes.bin)
+2023-12-24T12:23:09.564+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (/mnt/code/AS/SeverDroneClient/caches/8.2/fileHashes/resourceHashesCache.bin)
+2023-12-24T12:23:09.564+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/mnt/code/AS/SeverDroneClient/caches/8.2/fileHashes).
+2023-12-24T12:23:09.565+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/mnt/code/AS/SeverDroneClient/caches/8.2/executionHistory)
+2023-12-24T12:23:09.566+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (/mnt/code/AS/SeverDroneClient/caches/8.2/executionHistory/executionHistory.bin)
+2023-12-24T12:23:09.567+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/mnt/code/AS/SeverDroneClient/caches/8.2/executionHistory).
+2023-12-24T12:23:09.568+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [0f4d2527-0295-4baa-9e08-92fbf39e1157 port:46179, addresses:[localhost/127.0.0.1]]
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2023-12-24T12:23:09.569+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-12-24T12:23:09.570+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-12-24T12:23:09.570+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

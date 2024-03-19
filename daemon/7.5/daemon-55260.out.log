@@ -1,0 +1,197 @@
+2023-10-28T18:31:53.825+0300 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.base/java.lang=ALL-UNNAMED, --add-opens, java.base/java.lang.invoke=ALL-UNNAMED, --add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens, java.base/java.nio.charset=ALL-UNNAMED, --add-opens, java.base/java.net=ALL-UNNAMED, --add-opens, java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xmx2048m, -Dfile.encoding=UTF-8, -Duser.country=US, -Duser.language=en, -Duser.variant]
+2023-10-28T18:31:53.996+0300 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=9097ffc7-9443-4e63-b803-46f7bbf17b54,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=55260,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-10-28T18:31:54.057+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface docker0
+2023-10-28T18:31:54.132+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-10-28T18:31:54.189+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /172.17.0.1
+2023-10-28T18:31:54.230+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface wlp4s0
+2023-10-28T18:31:54.273+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2023-10-28T18:31:54.335+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:ae88:3539:aac:1060%wlp4s0
+2023-10-28T18:31:54.355+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.31.214
+2023-10-28T18:31:54.387+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2023-10-28T18:31:54.409+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2023-10-28T18:31:54.443+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo
+2023-10-28T18:31:54.453+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2023-10-28T18:31:54.479+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]].
+2023-10-28T18:31:54.509+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Sat Oct 28 18:31:54 MSK 2023, with address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:31:54.515+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:31:54.517+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=9097ffc7-9443-4e63-b803-46f7bbf17b54,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=55260,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-10-28T18:31:54.527+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=9097ffc7-9443-4e63-b803-46f7bbf17b54,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=55260,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+2023-10-28T18:31:54.540+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:31:54.609+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:31:54.667+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:31:54.685+0300 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2023-10-28T18:31:54.695+0300 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2023-10-28T18:31:54.743+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:36732 to /127.0.0.1:45035.
+2023-10-28T18:31:54.763+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2023-10-28T18:31:54.776+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2023-10-28T18:31:54.778+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-10-28T18:31:54.788+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Build
+2023-10-28T18:31:54.792+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}
+2023-10-28T18:31:54.793+0300 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}.
+2023-10-28T18:31:54.794+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient} with connection: socket connection from /127.0.0.1:45035 to /127.0.0.1:36732.
+2023-10-28T18:31:54.811+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45035 to /127.0.0.1:36732] after 0.0 minutes of idle
+2023-10-28T18:31:54.826+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:31:54.827+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:31:54.828+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:31:54.835+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:31:54.863+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:31:54.865+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-10-28T18:31:54.865+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-10-28T18:31:54.866+0300 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}. Dispatching build started information...
+2023-10-28T18:31:54.867+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@646db4db
+2023-10-28T18:31:54.869+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, XAUTHORITY, INVOCATION_ID, MOTD_SHOWN, DBUS_SESSION_BUS_ADDRESS, XDG_CURRENT_DESKTOP, JOURNAL_STREAM, QT_AUTO_SCREEN_SCALE_FACTOR, MAIL, LADSPA_PATH, SESSION_MANAGER, LOGNAME, PWD, PAM_KWALLET5_LOGIN, MANAGERPID, XCURSOR_THEME, KDE_SESSION_VERSION, SHELL, QT_SCREEN_SCALE_FACTORS, OLDPWD, CADENCE_AUTO_STARTED, VST_PATH, KDE_FULL_SESSION, GTK_MODULES, XDG_SESSION_PATH, DEBUGINFOD_URLS, DSSI_PATH, SYSTEMD_EXEC_PID, XDG_SESSION_DESKTOP, SHLVL, KDE_APPLICATIONS_AS_SCOPE, MEMORY_PRESSURE_WRITE, MEMORY_PRESSURE_WATCH, KDE_SESSION_UID, XDG_CONFIG_DIRS, LANG, XDG_SEAT_PATH, XDG_SESSION_TYPE, XDG_SESSION_ID, GRADLE_HOME, DISPLAY, GTK_RC_FILES, XDG_SESSION_CLASS, XCURSOR_SIZE, GTK3_MODULES, UBUNTU_MENUPROXY, DESKTOP_SESSION, USER, GTK2_RC_FILES, XDG_SEAT, XDG_RUNTIME_DIR, XDG_VTNR, HOME, LV2_PATH]
+2023-10-28T18:31:54.871+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-10-28T18:31:54.896+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-10-28T18:31:54.909+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@2e6ea796
+2023-10-28T18:31:54.959+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 55260). The daemon log file: /mnt/code/AS/SeverDroneClient/daemon/7.5/daemon-55260.out.log
+2023-10-28T18:31:55.003+0300 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 2 GiB]
+2023-10-28T18:31:55.029+0300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-10-28T18:31:55.038+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-10-28T18:31:55.096+0300 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2023-10-28T18:31:55.112+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=9097ffc7-9443-4e63-b803-46f7bbf17b54,javaHome=/opt/android-studio-canary/jbr,daemonRegistryDir=/mnt/code/AS/SeverDroneClient/daemon,pid=55260,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx2048m,-Dfile.encoding=UTF-8,-Duser.country=US,-Duser.language=en,-Duser.variant]
+AGPBI: {"kind":"warning","text":"Your project has set `android.useAndroidX=true`, but configuration `:app:debugRuntimeClasspath` still contains legacy support libraries, which may cause runtime issues.\nThis behavior will not be allowed in Android Gradle plugin 8.0.\nPlease use only AndroidX dependencies or set `android.enableJetifier=true` in the `gradle.properties` file to migrate your project to AndroidX (see https://developer.android.com/jetpack/androidx/migrate for more info).\nThe following legacy support libraries are detected:\n:app:debugRuntimeClasspath -> com.androidplot:androidplot-core:1.5.9 -> com.android.support:support-annotations:28.0.0","sources":[{}]}
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (106, 18): Enum argument can be null in Java, but exhaustive when contains no null branch
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (109, 68): 'getColor(Int): Int' is deprecated. Deprecated in Java
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (113, 68): 'getColor(Int): Int' is deprecated. Deprecated in Java
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (117, 68): 'getColor(Int): Int' is deprecated. Deprecated in Java
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (129, 61): 'getColor(Int): Int' is deprecated. Deprecated in Java
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainActivity.kt: (131, 61): 'getColor(Int): Int' is deprecated. Deprecated in Java
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainViewModel.kt: (104, 21): Variable 'connected' is never used
+w: /mnt/code/AS/SeverDroneClient/app/src/main/java/com/pogrom/myapplication/MainViewModel.kt: (114, 17): Variable 'scaned' is never used
+
+BUILD SUCCESSFUL in 2m 43s
+33 actionable tasks: 5 executed, 28 up-to-date
+2023-10-28T18:34:30.719+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2023-10-28T18:34:30.746+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-10-28T18:34:30.758+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45035 to /127.0.0.1:36732]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@1b6a06d9 with state Busy
+2023-10-28T18:34:30.760+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:45035 to /127.0.0.1:36732]
+2023-10-28T18:34:30.767+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-10-28T18:34:30.771+0300 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as idle, address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:34:30.774+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:34:30.794+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:34:30.811+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:30.863+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:30.889+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-10-28T18:34:30.890+0300 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@6edad421]
+2023-10-28T18:34:30.954+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@6edad421]
+2023-10-28T18:34:30.972+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=34282e08-4db7-4a04-8817-25cc95114431, currentDir=/mnt/code/AS/SeverDroneClient}
+2023-10-28T18:34:30.989+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received class org.gradle.launcher.daemon.protocol.Finished
+2023-10-28T18:34:31.005+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@6fac5ef4
+2023-10-28T18:34:31.008+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@6fac5ef4
+2023-10-28T18:34:31.009+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-10-28T18:34:31.010+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-10-28T18:34:31.032+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: received null
+2023-10-28T18:34:31.035+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 19: Received end-of-input from client.
+2023-10-28T18:34:31.039+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-10-28T18:34:34.778+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:34.781+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:34.783+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:34.785+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:34.785+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:34.786+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:44.777+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:44.784+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:44.787+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:44.790+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:44.791+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:44.793+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:44.796+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:44.798+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:44.800+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:46.811+0300 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(2)-127.0.0.1: (port 34515) connection closed
+2023-10-28T18:34:46.814+0300 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(2)-127.0.0.1: close connection, socket: Socket[addr=/127.0.0.1,port=48956,localport=34515]
+2023-10-28T18:34:46.818+0300 [DEBUG] [sun.rmi.transport.tcp] RMI TCP Connection(2)-127.0.0.1: socket close: Socket[addr=/127.0.0.1,port=48956,localport=34515]
+2023-10-28T18:34:47.780+0300 [DEBUG] [sun.rmi.transport.tcp] RMI Scheduler(0): close connection, socket: Socket[addr=localhost/127.0.0.1,port=17768,localport=50954]
+2023-10-28T18:34:54.777+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:54.788+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:54.791+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:54.794+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:54.796+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:54.797+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:54.801+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on daemon addresses registry.
+2023-10-28T18:34:54.804+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:54.806+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:59.510+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:59042 to /127.0.0.1:45035.
+2023-10-28T18:34:59.513+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 149: received class org.gradle.launcher.daemon.protocol.StopWhenIdle
+2023-10-28T18:34:59.514+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 149: Received non-IO message from client: StopWhenIdle[id=73de8b54-cbd8-41a4-8047-5091d0582860]
+2023-10-28T18:34:59.514+0300 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: StopWhenIdle[id=73de8b54-cbd8-41a4-8047-5091d0582860].
+2023-10-28T18:34:59.514+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: StopWhenIdle[id=73de8b54-cbd8-41a4-8047-5091d0582860] with connection: socket connection from /127.0.0.1:45035 to /127.0.0.1:59042.
+2023-10-28T18:34:59.515+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Storing daemon stop event: stop command received
+2023-10-28T18:34:59.540+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon stop event with timestamp 1698507299516
+2023-10-28T18:34:59.541+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:34:59.543+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:59.655+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:59.656+0300 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build stop command received
+2023-10-28T18:34:59.745+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to stop command received. The daemon is running a build: false
+2023-10-28T18:34:59.817+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2023-10-28T18:34:59.822+0300 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2023-10-28T18:34:59.817+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: dispatching Success[value=null]
+2023-10-28T18:34:59.897+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: StopWhenIdle[id=73de8b54-cbd8-41a4-8047-5091d0582860]
+2023-10-28T18:34:59.862+0300 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2023-10-28T18:34:59.897+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 149: received class org.gradle.launcher.daemon.protocol.Finished
+2023-10-28T18:34:59.954+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 149: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@2d458aff
+2023-10-28T18:34:59.950+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:34:59.957+0300 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2023-10-28T18:34:59.956+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@2d458aff
+2023-10-28T18:34:59.960+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 149: received null
+2023-10-28T18:34:59.964+0300 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 149: Received end-of-input from client.
+2023-10-28T18:34:59.958+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:34:59.962+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-10-28T18:34:59.969+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:34:59.970+0300 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: stopping connection
+2023-10-28T18:34:59.972+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:34:59.979+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-10-28T18:34:59.987+0300 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2023-10-28T18:34:59.992+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/mnt/code/AS/SeverDroneClient/caches/jars-9)
+2023-10-28T18:34:59.995+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/mnt/code/AS/SeverDroneClient/caches/jars-9).
+2023-10-28T18:35:00.020+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) has last been fully cleaned up 116 hours ago
+2023-10-28T18:35:00.043+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.044+0300 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) removing files not accessed on or after Sat Oct 21 18:31:58 MSK 2023.
+2023-10-28T18:35:00.065+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.066+0300 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/mnt/code/AS/SeverDroneClient/caches/jars-9) cleaned up in 0.043 secs.
+2023-10-28T18:35:00.095+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3)
+2023-10-28T18:35:00.112+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3).
+2023-10-28T18:35:00.128+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3) has last been fully cleaned up 116 hours ago
+2023-10-28T18:35:00.128+0300 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3) removing files not accessed on or after Sat Oct 21 18:32:03 MSK 2023.
+2023-10-28T18:35:00.169+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3) cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.170+0300 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/mnt/code/AS/SeverDroneClient/caches/transforms-3) cleaned up in 0.041 secs.
+2023-10-28T18:35:00.172+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/mnt/code/AS/SeverDroneClient/caches/7.5/fileContent)
+2023-10-28T18:35:00.173+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/mnt/code/AS/SeverDroneClient/caches/7.5/fileContent).
+2023-10-28T18:35:00.173+0300 [DEBUG] [org.gradle.internal.watch.vfs.impl.WatchingVirtualFileSystem] Closing VFS, dropping state
+2023-10-28T18:35:00.186+0300 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/mnt/code/AS/SeverDroneClient/caches/7.5/generated-gradle-jars) was closed 0 times.
+2023-10-28T18:35:00.186+0300 [DEBUG] [org.gradle.internal.watch.registry.impl.DefaultFileWatcherRegistry] Finished listening to file system change events
+2023-10-28T18:35:00.187+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2)
+2023-10-28T18:35:00.187+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.99/module-metadata.bin)
+2023-10-28T18:35:00.219+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resource-at-url.bin (/mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.99/resource-at-url.bin)
+2023-10-28T18:35:00.220+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (/mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.99/module-artifact.bin)
+2023-10-28T18:35:00.237+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2).
+2023-10-28T18:35:00.238+0300 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) has last been fully cleaned up 116 hours ago
+2023-10-28T18:35:00.253+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.298+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/resources-2.1] cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.300+0300 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/resources-2.1] removing files not accessed on or after Thu Sep 28 18:32:07 MSK 2023.
+2023-10-28T18:35:00.301+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/resources-2.1] cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.302+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/files-2.1] cleanup deleted 0 files/directories.
+2023-10-28T18:35:00.303+0300 [INFO] [org.gradle.cache.internal.LeastRecentlyUsedCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/files-2.1] removing files not accessed on or after Thu Sep 28 18:32:07 MSK 2023.
+2023-10-28T18:35:02.277+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/files-2.1] cleanup deleted 0 files/directories.
+2023-10-28T18:35:02.282+0300 [INFO] [org.gradle.cache.internal.AbstractCacheCleanup] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) [subdir: /mnt/code/AS/SeverDroneClient/caches/modules-2/metadata-2.99] cleanup deleted 0 files/directories.
+2023-10-28T18:35:02.285+0300 [INFO] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/mnt/code/AS/SeverDroneClient/caches/modules-2) cleaned up in 2.032 secs.
+2023-10-28T18:35:02.347+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/mnt/code/AS/SeverDroneClient/caches/journal-1)
+2023-10-28T18:35:02.355+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/mnt/code/AS/SeverDroneClient/caches/journal-1/file-access.bin)
+2023-10-28T18:35:02.365+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/mnt/code/AS/SeverDroneClient/caches/journal-1).
+2023-10-28T18:35:02.382+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/mnt/code/AS/SeverDroneClient/caches/7.5/fileHashes)
+2023-10-28T18:35:02.385+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/mnt/code/AS/SeverDroneClient/caches/7.5/fileHashes/fileHashes.bin)
+2023-10-28T18:35:02.404+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (/mnt/code/AS/SeverDroneClient/caches/7.5/fileHashes/resourceHashesCache.bin)
+2023-10-28T18:35:02.426+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/mnt/code/AS/SeverDroneClient/caches/7.5/fileHashes).
+2023-10-28T18:35:02.449+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/mnt/code/AS/SeverDroneClient/caches/7.5/executionHistory)
+2023-10-28T18:35:02.505+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (/mnt/code/AS/SeverDroneClient/caches/7.5/executionHistory/executionHistory.bin)
+2023-10-28T18:35:02.528+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/mnt/code/AS/SeverDroneClient/caches/7.5/executionHistory).
+2023-10-28T18:35:02.561+0300 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Java compile cache (/mnt/code/AS/SeverDroneClient/caches/7.5/javaCompile)
+2023-10-28T18:35:02.622+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache jarAnalysis.bin (/mnt/code/AS/SeverDroneClient/caches/7.5/javaCompile/jarAnalysis.bin)
+2023-10-28T18:35:02.668+0300 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache classAnalysis.bin (/mnt/code/AS/SeverDroneClient/caches/7.5/javaCompile/classAnalysis.bin)
+2023-10-28T18:35:02.706+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Java compile cache (/mnt/code/AS/SeverDroneClient/caches/7.5/javaCompile).
+2023-10-28T18:35:02.748+0300 [DEBUG] [org.gradle.cache.internal.VersionSpecificCacheCleanupAction] Processed version-specific caches at /mnt/code/AS/SeverDroneClient/caches for cleanup in 0.015 secs
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2023-10-28T18:35:02.888+0300 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [de98c0c6-2645-4364-a3f3-50b3d037e053 port:45035, addresses:[localhost/127.0.0.1]]
+2023-10-28T18:35:02.905+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-10-28T18:35:02.907+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-10-28T18:35:02.924+0300 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.

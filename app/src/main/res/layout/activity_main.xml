@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.androidplot.xy.XYPlot
+        android:id="@+id/plot"
+        style="@style/APDefacto.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/title_drones_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lineLabelRotationBottom="-45" />
+
+    <TextView
+        android:id="@+id/title_server_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Server status: "
+        />
+
+    <TextView
+        android:id="@+id/test_server_status_disconnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/title_server_status"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Disconnected"
+        android:textColor="@color/red"
+        />
+
+    <TextView
+        android:id="@+id/test_server_status_connected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/title_server_status"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:text="Connected"
+        android:textColor="@color/teal_200"
+        />
+
+    <TextView
+        android:id="@+id/title_drones_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title_server_status"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Drone status: "
+        />
+
+    <TextView
+        android:id="@+id/test_drones_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/title_server_status"
+        app:layout_constraintTop_toBottomOf="@id/title_server_status"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        android:text="Disconnected"
+        android:textColor="@color/red"
+        />
+
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_get_map"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plot"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+        android:id="@+id/btn_get_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Get Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_connect"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_scan"
+        app:layout_constraintTop_toBottomOf="@+id/plot"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_get_map"
+        app:layout_constraintTop_toBottomOf="@+id/plot"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextTextChangeIp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_get_map"
+        app:layout_constraintStart_toStartOf="@+id/btn_scan" >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="192.168.1.0"
+            />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnApplyIp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="apply ip"
+        app:layout_constraintBottom_toBottomOf="@id/editTextTextChangeIp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editTextTextChangeIp"
+        app:layout_constraintTop_toTopOf="@id/editTextTextChangeIp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
